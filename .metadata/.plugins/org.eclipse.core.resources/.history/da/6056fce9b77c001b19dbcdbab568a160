@@ -1,0 +1,9 @@
+import java.util.*;
+public class HrAcm {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a=11001,b=10110;
+		System.out.println(a^b);
+	}
+}

@@ -1,0 +1,26 @@
+import java.util.*;
+public class Number7 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int i,j;
+		for(i=3,j=i+2;i<=1000;i+=2,j+=2)
+		{
+			if(twinPrime(i,j)==1)
+			System.out.println("("+i+", "+j+")");
+		}
+	}
+	static int twinPrime(int i,int j)
+	{
+		int k,c=0;
+		for(k=1;k<=Math.min(i,j);k++)
+		{
+			if((i%k==0)&&(j%k==0))
+				c=k;
+		}
+		if(c==1&&(Math.abs(i-j)==2))
+			return 1;
+		else 
+			return 0;
+	}
+}

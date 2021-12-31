@@ -1,0 +1,33 @@
+
+public class AmchaAmcha {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	abstract class Shape
+	{
+		abstract void display();
+	}
+	class Rectangle
+	{
+		void display()
+		{
+			System.out.println("Making Rectangle");
+		}
+	}
+	class Circle
+	{
+		void display()
+		{
+			System.out.println("Making Circle");
+		}
+	}
+	class Square
+	{
+		void display()
+		{
+			System.out.println("Making Square");
+		}
+	}
+}

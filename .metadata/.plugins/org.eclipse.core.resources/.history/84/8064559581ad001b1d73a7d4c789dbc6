@@ -1,0 +1,22 @@
+
+public class Aswaa {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Dog nm=new Dog();
+		nm.printColor();
+	}
+}
+	class Animal
+	{
+		String color="white";
+	}
+	class Dog extends Animal
+	{
+		String color="black";
+		void printColor()
+		{
+			System.out.println(color);
+			System.out.println(super.color);
+		}
+	}

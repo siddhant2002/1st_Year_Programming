@@ -1,0 +1,26 @@
+import java.util.*;
+public class Number24 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		ArrayList<Integer> nm=new ArrayList<>();
+		ArrayList<Integer> kk=new ArrayList<>();
+		int ch,i;
+		do
+		{
+			System.out.println("Enter a number");
+			nm.add(sc.nextInt());
+			System.out.println("Press 1 for the next number");
+			ch=sc.nextInt();
+		}while(ch==1);
+		for(i=0;i<nm.size();i++)
+		{
+			if(nm.get(i)%2==0)
+				nm.add(0,nm.get(i));
+			else
+				nm.add(nm.size()-1,nm.get(i));
+		}
+		for(i=0;i<nm.size();i++)
+			System.out.println(nm.get(i));
+	}
+}

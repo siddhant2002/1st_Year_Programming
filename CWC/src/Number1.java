@@ -1,0 +1,23 @@
+import java.util.*;
+public class Number1 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		String s;
+		System.out.println("Enter a String");
+		s=sc.nextLine();
+		System.out.println("The string is "+copy(s));
+	}
+	static String p="";
+	static int i=0;
+	static String copy(String s)
+	{
+		if(i==s.length())
+			return p;
+		else
+		{
+			p+=s.charAt(i++);
+			return copy(s);
+		}		
+	}
+}

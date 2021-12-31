@@ -1,0 +1,34 @@
+
+public class AmchaAmcha {
+
+	public static void main(String[] args) {
+		Shape nm=new Rectangle();
+		Shape nm1=new Circle();
+		Shape nm2=new Square();
+	}
+}
+	abstract class Shape
+	{
+		abstract void display();
+	}
+	class Rectangle extends Shape
+	{
+		void display()
+		{
+			System.out.println("Making Rectangle");
+		}
+	}
+	class Circle extends Shape
+	{
+		void display()
+		{
+			System.out.println("Making Circle");
+		}
+	}
+	class Square extends Shape
+	{
+		void display()
+		{
+			System.out.println("Making Square");
+		}
+	}

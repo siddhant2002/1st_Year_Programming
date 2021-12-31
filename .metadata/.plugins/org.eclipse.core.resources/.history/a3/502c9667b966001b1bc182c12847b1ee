@@ -1,0 +1,10 @@
+import java.util.*;
+public class Number11 {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		double a=123.567;
+		double b=12_3.4_5_6;
+		System.out.println(b+" "+a);
+	}
+}

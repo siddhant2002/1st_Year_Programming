@@ -1,0 +1,12 @@
+import java.util.*;
+public class Assignment2_01 {
+
+	public static void main(String[] args) {
+		float f=12.67f;
+		if(f==12.67)
+		{
+			System.out.println("r");
+		}
+		
+	}
+}
